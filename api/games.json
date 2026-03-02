@@ -172,5 +172,33 @@
 "minimos": { "so": "Win 10", "cpu": "i5-7500", "ram": "8 GB", "gpu": "GTX 1060", "armazenamento": "60 GB" },
 "recomendados": { "so": "Win 11", "cpu": "i7-8700", "ram": "16 GB", "gpu": "RTX 3060", "armazenamento": "60 GB SSD" }
 }
+},
+{
+  "id": 11,
+  "titulo": "Onimusha: Way of the Sword",
+  "nota": 9.2,
+  "sinopse": "O despertar de Genma obriga um ronin solitário a empunhar a Manopla Sagrada. Uma jornada de vingança e honra através de um Japão feudal reimaginado, repleto de demônios e técnicas de espada ancestrais.",
+  "tags": ["Ação", "Hack and Slash", "Sobrenatural", "Samurai"],
+  "desenvolvedora": "Capcom",
+  "editora": "Capcom",
+  "lancamento": "22 Outubro 2026",
+  "plataformas": "PC, PS5, XSX, Nintendo Switch 2",
+  "requisitos": {
+    "minimos": {
+      "so": "Windows 10 64-bit",
+      "cpu": "Intel Core i5-8400 / AMD Ryzen 5 2600",
+      "ram": "12 GB RAM",
+      "gpu": "GTX 1060 (6GB) / Radeon RX 580",
+      "armazenamento": "50 GB SSD"
+    },
+    "recomendados": {
+      "so": "Windows 11 64-bit",
+      "cpu": "Intel Core i7-11700K / AMD Ryzen 7 5700X",
+      "ram": "16 GB RAM",
+      "gpu": "RTX 4070 / Radeon RX 7800 XT",
+      "armazenamento": "50 GB NVMe SSD"
+    }
+  }
 }
+
 ]
