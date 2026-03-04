@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         data-desc="${book.description}"
                         data-id="${book.id}">
                         
-                        <div class="aspect-[2/3] rounded-md shadow-sm overflow-hidden">
+                        <div class="aspect-[2/3] hover-card cursor-pointer group rounded-md shadow-sm overflow-hidden">
                             <img src="${book.cover}" 
                                  alt="${book.title}" 
-                                 class="w-full h-full object-cover">
+                                 class=" wireframe-box w-full h-full object-cover rounded-md"/>
                         </div>
 
                         <h4 class="text-sm font-semibold">${book.title}</h4>
@@ -38,16 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("book-list").classList.replace("lg:grid-cols-8", "lg:grid-cols-5");
 
         document.getElementById("book-details").innerHTML = `
-            <div class="p-6 border border-gray-200 rounded-lg shadow-sm bg-white w-full flex flex-col items-end">
+            <div class="p-6 border border-gray-200 rounded-lg shadow-sm bg-white w-full flex flex-col items-center ">
                 
-                <button id="close-details" class="text-blue-600 font-semibold hover:underline">
-                    close
-                </button>
-                 <button id="more-details" class="text-blue-600 font-semibold hover:underline">
-                    Mais Detalhes
-                </button>
+               
 
-                <div class="flex flex-col md:flex-row items-start gap-6 mb-4 w-full">
+                <div class="flex flex-col md:flex-row items-start gap-6 mb-4 w-full items-center justify-center">
                     <img src="${cover}" alt="${title}" class="w-64 object-cover rounded-md shadow-md">
                     <div>
                         <h3 class="text-3xl font-extrabold text-gray-900">${title}</h3>
@@ -62,6 +57,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="text-gray-700 leading-relaxed text-justify">
                     ${desc}
                 </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2  mt-6 w-full">
+                    <button id="more-details" class="font-semibold button-transparent">
+                        Mais Detalhes
+                    </button>
+
+                    <button id="close-details" class="font-semibold button-transparent">
+                        close
+                    </button>
+                </div>
             </div>
         `;
 

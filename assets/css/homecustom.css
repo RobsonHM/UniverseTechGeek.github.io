@@ -337,6 +337,7 @@ padding: 10px 20px;
 border-radius: 8px;
 font-size: 24px;
 font-weight: 800;
+padding-top: 20px;
 }
 .info-grid-item {
 border-bottom: 1px solid var(--gray-200);
@@ -383,3 +384,43 @@ border: 1px solid var(--gray-200);
     grid-template-columns: 3fr 1fr; /* O grande ocupa 3 partes, a coluna lateral 1 parte */
     gap: 1rem;
 }
+
+/* =========================
+   BOTÕES TRANSPARENTES (Custom)
+========================= */
+
+/* Seleciona os botões pelos IDs específicos */
+.button-transparent {
+    background: transparent;      /* Remove o fundo */
+    border: none;                /* Remove bordas se houver */
+    color: var(--white--);       /* Define a fonte como branca (usando sua variável) */
+    transition: color 0.3s ease; /* Suaviza a troca de cor */
+    padding: 8px 16px;           /* Espaçamento interno opcional */
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.button-transparent:hover {
+    color: var(--red-destaque);  /* Muda a fonte para vermelho */
+    background: transparent;      /* Garante que o fundo continue transparente */
+    text-decoration: none;        /* Opcional: remove o sublinhado se não quiser */
+}
+
+a {
+    text-decoration: none;
+}
+
+.info-grid-item {
+    display: flex;
+    flex-direction: column; /* Empilha o label e o valor */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    text-align: left;        /* Garante que o texto comece na esquerda */
+}
+
+/* Opcional: se quiser que fiquem na mesma linha, mas alinhados à esquerda */
+/*
+.info-grid-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px; 
+}
+*/
